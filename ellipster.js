@@ -1,7 +1,7 @@
 (function($) {
     $.fn.ellipster = function(options) {
         var defaults = {
-            'char' 			: '...',
+            'chars' 		: '...',
             'background' 	: 'white',
             'link'			: null
         };
@@ -28,7 +28,7 @@
 				'-webkit-box-shadow': bs,
 				'box-shadow'		: bs
         	})
-        	.text(options.char)
+        	.text(options.chars)
         	.appendTo($this)
         });
 
